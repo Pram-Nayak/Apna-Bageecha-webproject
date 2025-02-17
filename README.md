@@ -1,7 +1,7 @@
 # Plant E-commerce and Blog Website
 
 ## 📌 Overview
-This project was developed during my internship and includes a **Plant E-commerce Page** and an **Interactive Blog Page**. The application is built using **HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, and PDO** to ensure a dynamic and responsive user experience.
+This project was developed during my internship and includes a **Plant E-commerce Page** and an **Interactive Blog Page**. The application is built using **HTML, CSS, JavaScript, Bootstrap, PHP** to ensure a dynamic and responsive user experience.
 
 ## 🚀 Features Implemented
 
@@ -17,21 +17,11 @@ This project was developed during my internship and includes a **Plant E-commerc
 - **Responsive Design**: Ensured mobile and desktop compatibility using CSS media queries.
 
 ### ✍️ Blog Page
-- **User Authentication**:
-  - User registration and login with email and password.
-- **Blog Creation & Management**:
-  - Users can create, update, and delete blogs.
-  - Image and content update functionality.
-- **Category-Based Filtering**: Implemented using JavaScript for better user experience.
-- **Secure Database Management**:
-  - Implemented using **PHP PDO** for safe interactions with **MySQL**.
-  - Bootstrap used for responsive design.
+
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: PHP, PDO
-- **Database**: MySQL
-- **Server**: XAMPP
+
 ---
 <img src="https://drive.google.com/uc?id=1-Y-JsQgEeF3zq9ioeQgtmDdQN1WXeQkE" alt="Home Page" width="600">
 
