@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    bottom: 8px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+@media only screen and(max-width:300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+
+@media only screen and(max-width:500px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+
+    }
+
+    .dot {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+
+
+
+
+
+/*slider of testimonials or reviews */
+
+
+.testimonial-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.head {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 10px 0px;
+}
+
+.head h1 {
+    font-size: 1.5rem;
+
+}
+
+.line {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 60%;
+    height: 2px;
+    background-color: #222;
+    transition: 0.5s;
+}
+
+.head:hover .line {
+    width: 100%;
+
+}
+
+.testimonials {
+    max-width: 600px;
+    margin: 0px auto 20px;
+
+}
+
+.testimonials .testimonial {
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.testimonials .testimonial img {
+    position: relative;
+    bottom: -50px;
+    width: 25%;
+
+}
+
+.testimonials .testimonial .review {
+    padding: 50px 15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+
+}
+
+.testimonials .testimonial .review .text {
+    font-size: 0.65rem;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    line-height: 1.1rem;
+
+
+}
+
+.testimonials .testimonial .review .info h2 {
+    font-size: 1.2rem;
+    margin: 15px 5px 5px;
+    font-weight: 700;
+
+}
+
+.testimonials .testimonial .review .info p {
+    font-size: 0.8rem;
+    margin: 5px;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+}
+
+.testimonials .testimonial .review .stars i {
+    font-size: 0.6rem;
+    margin: 1px;
+
+    color: #FFCB37;
+}
+
+.buttons-test i {
+    background-color: #ffCB37;
+    padding: 3px 6px;
+    color: #f5f5f5;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.buttons-test button {
+    all: unset;
+}
+
+@media screen and(max-width:500px) {
+    .testimonials .testimonial img {
+        width: 35%;
+
+    }
+
+    .testimonials .testimonial .review .text {
+        font-size: 0.6rem;
+    }
+
+    .testimonials .testimonial .review .info h2 {
+        font-size: 1rem;
+    }
+
+    .testimonials .testimonial .review .info p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/*free shipping cards etc*/
+
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -20px;
+}
+
+.column1 {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+}
+
+.card1 {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .column1 {
+        width: calc(50% - 30px);
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column1 {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+}
+
+.card1 img {
+    max-width: 60%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card1 h3 {
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.card1 p {
+    font-size: 12px;
+
+}
+
+
+/*Product category */
+
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -20px;
+    margin-bottom: 20px;
+}
+
+.column2 {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+}
+
+.card2 {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .column2 {
+        width: calc(50% - 30px);
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column2 {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+}
+
+.card2 img {
+    max-width: 60%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card2 p:hover {
+    transform: scale(1.1);
+    filter: brightness(80%);
+
+}
+
+.card2 h3 {
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.card2 p {
+    font-size: 12px;
+    color: #222;
+    font-weight: 700;
+
+}
+
+.row-heading2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Box type for about us*/
+.box { 
+    width: 90%;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    --mask:
+      radial-gradient(37px at 37px 37px,#0000 calc(98% - 10px),#000 calc(100% - 10px) 98%,#0000) -37px -37px,
+      linear-gradient(90deg,#000 20px,#0000 0) -10px 50% /100% calc(100% - 74px + 10px) repeat-x,
+      linear-gradient(      #000 20px,#0000 0) 50% -10px/calc(100% - 74px + 10px) 100% repeat-y;
+  }
+  .box:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right top, #bdcfea, #94dcf6, #72e8e4, #8aeeb7, #c9ea80);
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+  @media screen and (min-width: 1000px) {
+    .box{
+        width: 70%;
+    }
+    
+}

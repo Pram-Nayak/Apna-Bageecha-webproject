@@ -1,0 +1,350 @@
+/*Removing default browser styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+
+}
+
+marquee {
+    background: #095f3a;
+}
+
+.MRQ {
+
+    float: left;
+    width: 100%;
+    height: 30px;
+    border-radius: 0;
+    padding: 2px;
+    color: #ddd;
+    margin-bottom: 10px;
+    margin-top: 1px;
+
+
+}
+
+.divider {
+    height: 5px;
+    background: linear-gradient(to right, #ffcc00, #ffffff, #ffcc00);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.shopheading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Navbar styles*/
+.navbar {
+    background-color: white;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+
+.cart {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+
+
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+/*navbar*/
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/*Shop items styles are here*/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    /*Give the number of divisions you want like four cards in repeat and the dimension of each card*/
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+
+}
+
+.item img {
+    width: 100%;
+
+    height: 250px;
+    border-radius: 2px 2px 0 0;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    justify-content: start;
+
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+
+}
+
+/*
+
+Style rules for label and some buttons
+*/
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+
+}
+
+/*Style rules for shopping cart*/
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+
+
+
+}
+
+/*Style rules for shopping cart-item*/
+
+.cart-item {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+
+}
+
+
+/*about us read  more*/
+
+.aboutus {
+    text-align: center;
+    /*  border: 3px solid black;*/
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.about-btn {
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 5px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background: transparent;
+    color: #292929;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.about-btn:hover {
+    background: #f6f6f6;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutus {
+        border: none;
+        padding: 10px;
+    }
+}

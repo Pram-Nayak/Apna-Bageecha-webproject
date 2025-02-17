@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>About Us Page </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            background-color: white;
+        }
+
+        .topnav {
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        .topnav a:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            color: black;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        #aboutUs {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #aboutUs img {
+            width: 400px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .content {
+            margin: 20px 0;
+            font-family: poppins;
+
+        }
+
+        .content h2 {
+            font-size: 50px;
+            color: black;
+            font-family: poppins;
+
+        }
+
+        .content h4 {
+            font-size: 20px;
+            color: black;
+            margin: 10px 0;
+
+        }
+
+        .description {
+            color: black;
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 100;
+            text-align: justify;
+        }
+
+        .btn {
+            font-weight: bold;
+            border: 2px solid #ffca70;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: all 0.4s;
+            background-color: #ffca70;
+        }
+
+        .btn:hover {
+            border: 2px solid #ffca70;
+            background: transparent;
+            color: #ffca70;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+
+        @media screen and (max-width: 790px) {
+            #aboutUs img {
+                width: 80%;
+            }
+
+            #aboutUs {
+                grid-template-columns: 1fr;
+                place-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <section id="aboutUs">
+        <img src="images/apnabageechalogo (2).png" alt="computer user">
+        <div class="content">
+            <h2>About Us</h2>
+
+            <p class="description">
+
+
+            <h3>Welcome to Apna Bageecha - Your Green Sanctuary!</h3>
+            <br>
+            At Apna Bageecha, we're dedicated to bringing the serene beauty of nature into your living space. Whether
+            you're a seasoned plant enthusiast or just beginning your journey into the world of greenery, we're here to
+            inspire and support you every step of the way.
+            <br>
+            <br>
+
+            <h3>Our Mission: Nurturing Nature, Nurturing You</h3>
+
+            <br>
+            Our mission is rooted in the belief that connecting with nature enriches our lives and nurtures our
+            well-being. Through our carefully curated selection of plants and personalized guidance, we aim to create a
+            green sanctuary where you can thrive and find joy in nurturing your own little piece of nature.
+            <br>
+            <br>
+            <h3>A Blog and Shop for Plant Lovers</h3>
+
+            <br>
+            In addition to offering a diverse range of plants, accessories, and gardening essentials, Apna Bageecha is
+            also your go-to destination for green inspiration and knowledge. Explore our blog for expert tips, creative
+            ideas, and in-depth plant care guides that will help you cultivate a thriving indoor oasis.
+            <br>
+            <br>
+            <h3>Empowering Plant Parenthood</h3>
+
+            <br>
+            We understand that each plant parent is unique, and we're here to support you on your journey to becoming
+            the best plant parent you can be. From selecting the perfect plant for your space to providing ongoing care
+            advice, our team of passionate green enthusiasts is here to help you every step of the way.
+            <br>
+            <br>
+            <h3>Sustainability and Community</h3>
+
+            <br>
+            At Apna Bageecha, we're committed to promoting sustainable practices and fostering a strong sense of
+            community. We partner with local growers and artisans to bring you ethically sourced products, and we strive
+            to minimize our environmental impact through eco-friendly packaging and operations.
+            <br>
+            <br>
+            <h3>Join Our Growing Family</h3>
+
+            <br>
+            Whether you're a seasoned gardener or a curious beginner, we invite you to join our growing family of plant
+            lovers. Connect with us on social media, sign up for our newsletter, and explore our blog to stay inspired
+            and informed.<br>
+            <br>
+
+            <br>
+            Thank you for choosing Apna Bageecha as your trusted green companion. Together, let's create a world where
+            nature thrives, and so do we.
+
+
+            </p>
+
+        </div>
+
+    </section>
+    <section class="curved2"></section>
+    <div class="footer">
+        <div class="foothead">
+            <h4>Follow Us</h4>
+        </div>
+        <div class="foot-social">
+            <ul>
+                <li><a href="#home"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#home"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#home"><i class="bi bi-youtube"></i></a></li>
+
+            </ul>
+
+        </div>
+        <div class="foothead">
+            <h4>Quick Links</h4>
+        </div>
+        <div class="footnav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Refund and Return</a></li>
+                <li><a href="#home">Shipping</a></li>
+                <li><a href="#home">Terms of Service</a></li>
+            </ul>
+
+        </div>
+        <hr>
+        <div class="copyright-sec">
+            <p>© 2024, Apna Bageecha Store</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

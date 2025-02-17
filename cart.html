@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Bageecha</title>
+    <link rel="icon" href="images/apnabageechalogo.png" sizes="16x16">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="garden.html"><b>Blog</b></a>
+
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bi bi-list"></i>
+        </a>
+    </div>
+    <div class="navbar">
+        <a href="index.html">
+            <h2>Apna Bageecha Store</h2>
+        </a>
+        <a href="">
+            <h2></h2>
+        </a>
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart3"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+
+    </div>
+
+
+    <div id="label" class="text-center"></div>
+    <div class="shopping-cart" id="shopping-cart"></div>
+    <div class="cart-foot" style="position: fixed;left: 0;bottom: 0;width: 100%;">
+        <section class="curved2"></section>
+        <div class="footer">
+            <div class="foothead">
+                <h4>Follow Us</h4>
+            </div>
+            <div class="foot-social">
+                <ul>
+                    <li><a href="#home"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#home"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#home"><i class="bi bi-youtube"></i></a></li>
+
+                </ul>
+
+            </div>
+            <div class="foothead">
+                <h4>Quick Links</h4>
+            </div>
+            <div class="footnav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">Refund and Return</a></li>
+                    <li><a href="#home">Shipping</a></li>
+                    <li><a href="#home">Terms of Service</a></li>
+                </ul>
+
+            </div>
+            <hr>
+            <div class="copyright-sec">
+                <p>© 2024, Apna Bageecha Store</p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } v
+
+    </script>
+</body>
+<script src="src/Data.js"></script>
+<script src="src/cart.js"></script>
+
+</html>
